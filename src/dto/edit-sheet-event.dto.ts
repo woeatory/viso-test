@@ -20,6 +20,7 @@ export class EditSheetEventDto {
   @IsEmail()
   user: string;
 
+  @IsOptional()
   @IsString()
   value: string;
 }
