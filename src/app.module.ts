@@ -1,10 +1,20 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ConfigModule } from '@nestjs/config';
+import { PrismaModule } from './prisma/prisma.module';
+import { SheetRepository } from './repository/sheet.repository';
+import { PrismaSheetRepository } from './repository/prisma/sheet.repository';
 
 @Module({
-  imports: [],
+  imports: [ConfigModule.forRoot(), PrismaModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: SheetRepository,
+      useClass: PrismaSheetRepository,
+    },
+  ],
 })
 export class AppModule {}
