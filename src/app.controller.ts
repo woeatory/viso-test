@@ -1,14 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Logger, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Log } from './decorators/logger.decorator';
+import { EditSheetEventDto } from './dto/edit-sheet-event.dto';
 
 @Controller()
 export class AppController {
+  private readonly logger = new Logger(AppController.name);
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Post()
   @Log(AppController.name)
-  getHello(): string {
-    return this.appService.getHello();
+  async editSheetWebhook(@Body() EditSheetEventDto: EditSheetEventDto) {
+    this.logger.log(EditSheetEventDto);
   }
 }
