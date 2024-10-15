@@ -8,6 +8,7 @@ export class EditSheetEventDto {
   @IsString()
   oldValue: string;
 
+  @IsOptional()
   @IsNumber()
   range: number;
 
