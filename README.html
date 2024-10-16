@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Description</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<h2 id="description">Description</h2>
+<p><a href="https://github.com/nestjs/nest">Nest</a> framework TypeScript starter repository.</p>
+<h2 id="project-available-on-link">Project available on <a href="https://viso-test.onrender.com/">link</a></h2>
+<h2 id="googhe-sheets-link">Googhe sheets <a href="https://docs.google.com/spreadsheets/d/1C_UMs4qRckUIwXMOmYNwsZYVvOO0VD9X762wfO7pgq8/edit?usp=sharing">link</a></h2>
+<h2 id="project-setup">Project setup</h2>
+<pre><code class="language-bash">$ pnpm install
+</code></pre>
+<h2 id="generate-migrations">Generate migrations</h2>
+<pre><code class="language-bash">$ pnpx prisma migrate dev --name init
+</code></pre>
+<h2 id="install-and-generate-prisma-client">Install and generate Prisma Client</h2>
+<pre><code class="language-bash">$ pnpm install @prisma/client
+</code></pre>
+<h2 id="compile-and-run-the-project">Compile and run the project</h2>
+<pre><code class="language-bash"><span class="hljs-comment"># development</span>
+$ pnpm run start
+
+<span class="hljs-comment"># watch mode</span>
+$ pnpm run start:dev
+
+<span class="hljs-comment"># production mode</span>
+$ pnpm run start:prod
+</code></pre>
+<h2 id="run-tests">Run tests</h2>
+<pre><code class="language-bash"><span class="hljs-comment"># unit tests</span>
+$ pnpm run <span class="hljs-built_in">test</span>
+
+<span class="hljs-comment"># e2e tests</span>
+$ pnpm run <span class="hljs-built_in">test</span>:e2e
+
+<span class="hljs-comment"># test coverage</span>
+$ pnpm run <span class="hljs-built_in">test</span>:cov
+</code></pre>
+<h2 id="resources">Resources</h2>
+<p>Check out a few resources that may come in handy when working with NestJS:</p>
+<ul>
+<li>Visit the <a href="https://docs.nestjs.com">NestJS Documentation</a> to learn more about the framework.</li>
+<li>For questions and support, please visit our <a href="https://discord.gg/G7Qnnhy">Discord channel</a>.</li>
+<li>To dive deeper and get more hands-on experience, check out our official video <a href="https://courses.nestjs.com/">courses</a>.</li>
+<li>Visualize your application graph and interact with the NestJS application in real-time using <a href="https://devtools.nestjs.com">NestJS Devtools</a>.</li>
+<li>Need help with your project (part-time to full-time)? Check out our official <a href="https://enterprise.nestjs.com">enterprise support</a>.</li>
+<li>To stay in the loop and get updates, follow us on <a href="https://x.com/nestframework">X</a> and <a href="https://linkedin.com/company/nestjs">LinkedIn</a>.</li>
+<li>Looking for a job, or have a job to offer? Check out our official <a href="https://jobs.nestjs.com">Jobs board</a>.</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please <a href="https://docs.nestjs.com/support">read more here</a>.</p>
+<h2 id="stay-in-touch">Stay in touch</h2>
+<ul>
+<li>Author - <a href="https://twitter.com/kammysliwiec">Kamil Myśliwiec</a></li>
+<li>Website - <a href="https://nestjs.com/">https://nestjs.com</a></li>
+<li>Twitter - <a href="https://twitter.com/nestframework">@nestframework</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p>Nest is <a href="https://github.com/nestjs/nest/blob/master/LICENSE">MIT licensed</a>.</p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
