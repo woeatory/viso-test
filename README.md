@@ -26,10 +26,26 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Project available on [link](https://viso-test.onrender.com/), [api](https://viso-test.onrender.com/api)
+
+## Googhe sheets [link](https://docs.google.com/spreadsheets/d/1C_UMs4qRckUIwXMOmYNwsZYVvOO0VD9X762wfO7pgq8/edit?usp=sharing)
+
 ## Project setup
 
 ```bash
 $ pnpm install
+```
+
+## Generate migrations
+
+```bash
+$ pnpx prisma migrate dev --name init
+```
+
+## Install and generate Prisma Client
+
+```bash
+$ pnpm install @prisma/client
 ```
 
 ## Compile and run the project
